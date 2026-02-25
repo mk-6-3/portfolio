@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(carbon-fiber-seamless-background-vector-metallic-grid_79145-191.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Glass Card */
+.box {
+    width: 420px;
+    padding: 40px 25px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    transition: 0.4s ease;
+}
+
+.box:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 50px rgba(255, 0, 255, 0.6);
+}
+
+/* Name Gradient */
+.name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #00f5ff, #ff00c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 180px;
+    border-radius: 50%;
+    border: 4px solid #00f5ff;
+    transition: 0.4s ease;
+    margin-bottom: 20px;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    border-color: #ff00c8;
+}
+
+/* Bio */
+.bio {
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Buttons Container */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Base Button */
+.btn {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.4s ease;
+    color: white;
+}
+
+/* Instagram Button */
+.insta {
+    background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+}
+
+.insta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(214, 41, 118, 0.6);
+}
+
+/* Facebook Button */
+.fb {
+    background: #1877f2;
+}
+
+.fb:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(24, 119, 242, 0.6);
+}
+
+/* Project Button */
+.project {
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(221, 36, 118, 0.6);
+}

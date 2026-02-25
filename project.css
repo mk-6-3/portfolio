@@ -1,0 +1,95 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Card */
+.project-box {
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    transition: 0.4s ease;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(255, 0, 255, 0.6);
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #00f5ff, #ff00c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Buttons Container */
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Base Button */
+.btn {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: 500;
+    color: white;
+    transition: 0.4s ease;
+}
+
+/* Project 1 */
+.project1 {
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+}
+
+.project1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(221, 36, 118, 0.6);
+}
+
+/* Project 2 */
+.project2 {
+    background: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+.project2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(56, 239, 125, 0.6);
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    opacity: 1;
+    letter-spacing: 1px;
+}
