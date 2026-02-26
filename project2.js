@@ -11,10 +11,24 @@ function calculateDays()
     let birthDate = new Date(dob);
     let today = new Date();
 
-    let diffTime = today - birthDate;
+    let years = today.getFullYear() - birthDate.getFullYear();
+    let months = today.getMonth() - birthDate.getMonth();
+    let days = today.getDate() - birthDate.getDate();
 
-    let daysAlive = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    // Adjust if days are negative
+    if (days < 0) {
+        months--;
+        // get last day of previous month
+        let lastMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+        days += lastMonth.getDate();
+    }
+
+    // Adjust if months are negative
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
 
     document.getElementById("result").innerText =
-        "You have lived for " + daysAlive + " days";
+        "You have lived for " + years + " years, " + months + " months and " + days + " days";
 }
