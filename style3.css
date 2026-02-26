@@ -93,14 +93,14 @@ body {
     box-shadow: 0 10px 20px rgba(214, 41, 118, 0.6);
 }
 
-/* Facebook Button */
-.fb {
-    background: #1877f2;
+/* LinkedIn Button */
+.linkedin {
+    background: #0a66c2;
 }
 
-.fb:hover {
+.linkedin:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(24, 119, 242, 0.6);
+    box-shadow: 0 10px 20px rgba(10, 102, 194, 0.6);
 }
 
 /* Project Button */
